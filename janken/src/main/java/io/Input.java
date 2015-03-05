@@ -1,4 +1,4 @@
-package org.gradle;
+package io;
 
 /**
  * 入力データインターフェース

@@ -1,5 +1,7 @@
 package org.gradle;
 
+import enums.JankenHand;
+
 
 /**
  * ジャンケンのプレイヤー
@@ -9,7 +11,7 @@ package org.gradle;
  */
 public class JankenPlayer {
 	/**
-	 * 手のパターン
+	 * じゃんけんの手のパターン
 	 */
 	private JankenHand hand;
 
@@ -17,16 +19,18 @@ public class JankenPlayer {
 	 * コンストラクタ
 	 *
 	 * @param hand
-	 *            手のパターン
+	 *            じゃんけんの手のパターン
 	 */
 	private JankenPlayer(JankenHand hand) {
 		this.hand = hand;
 	}
 
+	/**
+	 * じゃんけんのプレイヤーのインスタンスを返す
+	 * @param jankenHand じゃんけんの手
+	 * @return じゃんけんのプレイヤー
+	 */
 	public static JankenPlayer getInstance(JankenHand jankenHand){
-		if(jankenHand==null){
-			return null;
-		}
 		return new JankenPlayer(jankenHand);
 	}
 	/**

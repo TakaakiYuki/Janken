@@ -1,4 +1,4 @@
-package org.gradle;
+package enums;
 
 import java.util.Arrays;
 

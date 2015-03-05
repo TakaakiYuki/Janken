@@ -1,20 +1,25 @@
 package org.gradle;
 
+import enums.WinLoseType;
 
 /**
  * ジャンケンのインターフェース
+ * 
  * @author takaaki_yuki
  *
  */
 public interface Janken {
 	/**
 	 * ジャンケンの勝敗を返すメソッド
+	 * 
 	 * @return
 	 */
-	public WinLoseType battleResult(JankenPlayer user,JankenPlayer cpu);
+	WinLoseType battleResult();
 
 	/**
 	 * ジャンケンを行うメソッド
+	 * 
 	 */
-	public void playGame();
+	void playGame();
+
 }

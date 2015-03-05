@@ -1,6 +1,8 @@
-package org.gradle;
+package strategy;
 
 import java.util.Random;
+
+import enums.JankenHand;
 
 /**
  * じゃんけんで出す手を乱数によって決定する

@@ -1,4 +1,4 @@
-package org.gradle;
+package io;
 
 /**
  * 標準出力へ文字列を出力する
